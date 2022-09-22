@@ -9,3 +9,6 @@ Starting the development server should be as simple as running two commands:
 npm i
 npm run dev
 ```
+
+### Videos
+* [Getting Started](https://youtu.be/uQiTHuXAXoc)

@@ -10,11 +10,18 @@ const shared : Configuration = {
 		}, {
 			test: /\.(html|css)$/i,
 			loader: "raw-loader",
+		}, {
+			test: /\.(svg|wav)$/i,
+			loader: "file-loader"
 		}],
 	},
 	resolve: {
 		extensions: [".tsx", ".ts", ".js"],
 	},
+	externals: {
+		canvas: "commonjs canvas",
+		"audio-loader": "commonjs audio-loader",
+	}
 };
 
 const config : Array<Configuration> = [{
